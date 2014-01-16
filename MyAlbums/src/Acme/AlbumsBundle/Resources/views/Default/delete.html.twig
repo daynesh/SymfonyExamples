@@ -1,0 +1,10 @@
+{%extends "AcmeAlbumsBundle:Default:index.html.twig" %}
+
+{% block content %}
+
+	<h1>Deleting Album</h1>
+	<p>Are you sure that you want to delete '{{ albumToDelete.title }}' by '{{ albumToDelete.artist }}'?</p>
+
+	{{ form(form) }}
+
+{% endblock %}

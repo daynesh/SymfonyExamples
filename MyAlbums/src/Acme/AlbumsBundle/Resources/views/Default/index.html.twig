@@ -1,0 +1,32 @@
+{% extends "AcmeAlbumsBundle:Default:layout.html.twig" %}
+
+{% block head %}
+	<title>My Albums</title>
+{% endblock %}
+
+{% block content %}
+
+	<h1>My Albums</h1>
+	<p>
+		<a href="/album/add">Add new album</a>
+	</p>
+
+	<table class="table">
+		<tr>
+			<th>Title</th>
+			<th>Artist</th>
+			<th>&nbsp;<th>
+		</tr>
+		{% for album in albumRecords %}
+		<tr>	
+			<td>{{ album.artist }}</td>
+			<td>{{ album.title }}</td>
+			<td>
+				<a href="/album/edit/{{ album.id }}">Edit</a>
+				<a href="/album/delete/{{ album.id }}">Delete</a>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+
+{% endblock %}

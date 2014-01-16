@@ -1,0 +1,19 @@
+acme_albums_homepage:
+    pattern:  /
+    defaults: { _controller: AcmeAlbumsBundle:Default:index }
+
+listOfAlbums:
+    path:     /album
+    defaults: { _controller: AcmeAlbumsBundle:Default:album }
+
+acme_addAlbum:
+    path:     /album/add 
+    defaults: { _controller: AcmeAlbumsBundle:Default:add }
+
+acme_editAlbum:
+    path:     /album/edit/{id}
+    defaults: { _controller: AcmeAlbumsBundle:Default:edit }
+
+acme_deleteAlbum:
+    path:    /album/delete/{id}
+    defaults: { _controller: AcmeAlbumsBundle:Default:delete }

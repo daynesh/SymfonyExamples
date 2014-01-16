@@ -1,0 +1,7 @@
+parameters:
+#    acme_albums.example.class: Acme\AlbumsBundle\Example
+
+services:
+#    acme_albums.example:
+#        class: %acme_albums.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,4 @@
+acme_albums:
+    resource: "@AcmeAlbumsBundle/Resources/config/routing.yml"
+    prefix:   /
+
