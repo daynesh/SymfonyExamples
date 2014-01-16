@@ -6,6 +6,7 @@ This repo consists of several example projects built to demonstrate the use of t
 Currently, example projects include:
 
 * QuickTour
+* MyAlbums
 
 
 Running Application
